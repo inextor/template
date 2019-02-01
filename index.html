@@ -1,0 +1,83 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="manifest" href="webmanifest.webmanifest">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link media="all" rel="stylesheet" href="css/layout.css">
+		<link media="all" rel="stylesheet" href="css/theme.css">
+		<link media="all" rel="stylesheet" href="Sauna/css/Sauna.css">
+		<script src="https://apis.google.com/js/api.js"></script>
+		<script type="module">
+			import Navigation from './Sauna/js/NavigationSpa.js';
+			//import Util from './Diabetes/Util.js';
+			//import PromiseUtils from './PromiseUtils/PromiseUtils.js';
+
+			let n = new Navigation();
+			n.setPageInit('page1');
+
+		</script>
+	</head>
+	<body>
+		<sauna-page id="page1">
+			<div>
+				<header >
+					<div class="title">Notes</div>
+					<div class="left-center">
+						<div>
+							<label class="button-icon" for="search-input"><i class="material-icons">search</i></label>
+						</div>
+					</div>
+				</header>
+				<div>
+					<h1>An Awesome app</h1>
+					<div class="container"><a class="button" href="#page1">To page 1</a></div>
+					<div class="container"><a class="button" href="#page2">To page 2</a></div>
+					<div class="container"><a class="button" href="#page3">To page 3</a></div>
+				</div>
+				<footer>Footer</footer>
+			</div>
+		</sauna-page>
+		<sauna-page id="page2">
+			<div>
+				<header >
+					<div>
+						<a href="#page1" class="button-icon" data-navigation="back"><i class="material-icons">arrow_back_ios</i></a>
+						<span class="title">Notes</span>
+					</div>
+					<div></div>
+				</header>
+				<div class="main">
+					<div>
+						<h2>Page2</h2>
+						<p>An awesome app2</p>
+						<div class="container"><a class="button" href="#page1">To page 1</a></div>
+						<div class="container"><a class="button" href="#page2">To page 2</a></div>
+						<div class="container"><a class="button" href="#page3">To page 3</a></div>
+					</div>
+				</div>
+			</div>
+		</sauna-page>
+		<sauna-page id="page3">
+			<div>
+				<header >
+					<div>
+						<a href="#page2" class="button-icon" data-navigation="back"><i class="material-icons">arrow_back_ios</i></a>
+						<span class="title">Notes</span>
+					</div>
+				</header>
+				<div class="main">
+					<div>
+						<h2>Page3</h2>
+						<p>
+						<div class="container">	<a class="button" href="#page1">To page 1</a></div>
+						<div class="container">	<a class="button" href="#page2">To page 2</a></div>
+						<div class="container">	<a class="button" href="#page3">To page 3</a></div>
+						</p>
+					</div>
+				</div>
+			</div>
+		</sauna-page>
+	</body>
+</html>
